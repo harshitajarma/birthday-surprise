@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 24th Birthday TITIY❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+overflow-x:hidden;
+min-height:100vh;
+text-align:center;
+}
+
+.page{
+display:none;
+padding:40px 20px;
+min-height:100vh;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.active{
+display:flex;
+}
+
+h1,h2,h3{
+color:#d63384;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+color:#444;
+max-width:800px;
+margin:auto;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff4d88;
+color:white;
+font-size:18px;
+cursor:pointer;
+margin:10px;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+input{
+padding:12px;
+border-radius:15px;
+border:none;
+width:250px;
+font-size:16px;
+}
+
+.photo{
+width:280px;
+height:280px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+margin:20px;
+}
+
+.gifts{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gift{
+font-size:90px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gift:hover{
+transform:scale(1.2);
+}
+
+.letter{
+background:white;
+padding:30px;
+border-radius:25px;
+max-width:850px;
+box-shadow:0 0 25px rgba(0,0,0,0.15);
+}
+
+#slideImage{
+width:320px;
+height:420px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.ring{
+font-size:120px;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:25px;
+animation:floatHeart linear forwards;
+pointer-events:none;
+}
+
+@keyframes floatHeart{
+to{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+#musicBtn{
+position:fixed;
+top:10px;
+right:10px;
+z-index:999;
+}
+
+#daysCounter{
+margin:20px;
+font-size:22px;
+font-weight:bold;
+color:#d63384;
+}
+
+#proposalText{
+max-width:800px;
+font-size:24px;
+line-height:1.8;
+margin:20px auto;
+}
+
+.finalBox{
+background:white;
+padding:30px;
+border-radius:25px;
+max-width:850px;
+box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" autoplay loop>
+<source src="khat.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">
+🎵 Music
+</button>
+
+<!-- PAGE 1 -->
+
+<div id="welcome" class="page active">
+
+<h1>🎂 Happy 24th Birthday TITIY❤️</h1>
+
+<img src="ak3.jpg" class="photo">
+
+<p>
+I prepared something just to make you feel special and important...
+</p>
+
+<div id="daysCounter"></div>
+
+<br>
+
+<input type="password" id="code"
+placeholder="Enter our secret code">
+
+<br><br>
+
+<button onclick="checkCode()">Unlock ❤️</button>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div id="gifts" class="page">
+
+<h1>🎁 Choose Your Birthday Gift 🎁</h1>
+
+<p>
+Only one click away from your surprise...
+</p>
+
+<div class="gifts">
+
+<div class="gift" onclick="gift1()">🎁</div>
+
+<div class="gift" onclick="gift2()">🎁</div>
+
+<div class="gift" onclick="gift3()">🎁</div>
+
+</div>
+
+</div>
+
+<!-- GIFT 1 -->
+
+<div id="gift1" class="page">
+
+<div class="letter">
+
+<h1>💌 A Letter For You</h1>
+
+<p>
+
+Happy Birthday My Love ❤️
+
+Honestly i feel so lucky to be celebrating you.
+
+Thank you for every laugh.
+Thank you for every smile.
+Thank you for being my comfort, my happiness and my safe place.
+
+You are an incredible person as far i know.
+
+Every memory with you is my favorite memory.
+
+And every future dream I have somehow includes you.
+
+And i love you more than words can ever explain.
+
+❤️
+
+</p>
+
+<button onclick="showGallery()">
+Continue ❤️
+</button>
+
+</div>
+
+</div>
+
+<!-- GIFT 2 -->
+
+<div id="gift2" class="page">
+
+<h1>💌 If You Ever Doubt Yourself, Read This 💌</h1>
+
+<p>I don't know if I tell you this enough, but I hope you know how special you are.</p>
+<p>And as for me... I feel incredibly lucky that our paths crossed. Some people spend years looking for someone who makes them feel understood, appreciated, and happy. Somehow, I found that in you.</p>
+<p>So on your birthday, I don't want to ask for promises. I just want you to remember your worth,remember that you are loved more than you realize, appreciated more than you know, and thought about more often than you could imagine.</p>
+<p>And if life ever gets difficult, come back and read this again, because every word will still be true ∞ ❤️</p>
+
+<button onclick="showGallery()">
+Continue ❤️
+</button>
+
+</div>
+
+<!-- GIFT 3 -->
+
+<div id="gift3" class="page">
+
+<h1>❤️ Reasons I Love You ❤️</h1>
+
+<p>❤️ I love your kindness and the way you care about the people you love</p>
+<p>❤️ I love your heart, your intentions, and the person you are</p>
+<p>❤️ I love the little things you do that you probably don't even notice</p>
+<p>❤️ I love the way you make my world brighter just by being in it</p>
+<p>❤️ I love the way you make my world brighter just by being in it</p>
+<p>❤️ Out of all the people in this world, my heart chose you... and if given the chance, it would choose you all over again. ❤️</p>
+
+<button onclick="showGallery()">
+Continue ❤️
+</button>
+
+</div>
+
+<!-- GALLERY -->
+
+<div id="gallery" class="page">
+
+<h1>📸 Snaps and Memories</h1>
+
+<img id="slideImage" src="ak1.jpg">
+
+<br><br>
+
+<p id="caption">
+No matter how many times I see this picture, I never get tired of it❤️
+</p>
+
+<br>
+
+<button onclick="nextPhoto()">
+Next Memory ❤️
+</button>
+
+</div>
+
+<!-- FINAL -->
+
+<div id="final" class="page">
+
+<div class="finalBox">
+
+<div class="ring">💍</div>
+
+<h1>❤️ One Last Question ❤️</h1>
+
+<h2 id="proposalText"></h2>
+
+<br>
+
+<button onclick="yesClicked()">
+YES ❤️
+</button>
+
+<button onclick="yesClicked()">
+ABSOLUTELY YES ❤️
+</button>
+
+<div id="answer"></div>
+
+</div>
+
+</div>
+
+<script>
+
+/* SECRET CODE */
+
+const secretCode="AKSHAT24";
+
+/* RELATIONSHIP DAYS */
+
+const startDate=new Date("2025-06-25");
+
+const today=new Date();
+
+const diff=today-startDate;
+
+const days=Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("daysCounter").innerHTML=
+"❤️ We've been together for "+days+" beautiful days ❤️";
+
+/* MUSIC */
+
+function toggleMusic(){
+
+let music=document.getElementById("bgMusic");
+
+if(music.paused){
+music.play();
+}else{
+music.pause();
+}
+
+}
+
+/* HEARTS */
+
+setInterval(()=>{
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(Math.random()*5+5)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),10000);
+
+},400);
+
+/* PAGE CONTROL */
+
+function showPage(id){
+
+document.querySelectorAll(".page")
+.forEach(page=>page.classList.remove("active"));
+
+document.getElementById(id)
+.classList.add("active");
+
+}
+
+/* LOGIN */
+
+function checkCode(){
+
+let entered=document.getElementById("code").value;
+
+if(entered===secretCode){
+
+showPage("gifts");
+
+}else{
+
+alert("Oops 😜 Wrong Code");
+
+}
+
+}
+
+/* GIFTS */
+
+function gift1(){showPage("gift1");}
+function gift2(){showPage("gift2");}
+function gift3(){showPage("gift3");}
+
+/* GALLERY */
+
+function showGallery(){
+
+showPage("gallery");
+
+}
+
+const photos=[
+
+{
+img:"ak1.jpg",
+text:"That winter days❤️"
+},
+
+{
+img:"ak4.jpg",
+text:"One of my happiest memories ✨"
+},
+
+{
+img:"ak5.jpg",
+text:"The smile I want forever 🥹"
+},
+
+{
+img:"ak6.jpg",
+text:"My favorite person in the entire world is you❤️"
+}
+
+];
+
+let current=0;
+
+function nextPhoto(){
+
+current++;
+
+if(current>=photos.length){
+
+showPage("final");
+
+typeWriter();
+
+return;
+
+}
+
+document.getElementById("slideImage").src=
+photos[current].img;
+
+document.getElementById("caption").innerHTML=
+photos[current].text;
+
+}
+
+/* TYPEWRITER */
+
+const proposalMessage=
+"You know, Akshat, I've been sitting here for so long trying to find the perfect words for you, but every time I start writing, I realize that no words are ever enough. How do I explain what you mean to me when you've become such a special part of my life on your birthday, I want to ask you for one little gift. Not flowers, not chocolates, not anything expensive. I just want you to promise me that no matter how busy life gets, no matter how many years pass, you'll never forget what we have and the memories we've created together. Promise me you'll always keep a place for me in your heart, just like you will always have a place in mine";
+
+let i=0;
+
+function typeWriter(){
+
+if(i<proposalMessage.length){
+
+document.getElementById("proposalText").innerHTML +=
+proposalMessage.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,40);
+
+}
+
+}
+
+/* FINAL */
+
+function yesClicked(){
+
+document.getElementById("answer").innerHTML=`
+
+<h1>🎉 YAYYYYY ❤️ 🎉</h1>
+
+<p>
+
+Akshat❤️, I genuinely want to see you win in life. I want to be there for your achievements, your happiest moments, your dreams coming true, and even the days when life feels difficult. Seeing you happy has become one of my favorite things.
+
+So today, on your 24th birthday, I wish for your smile to stay as bright as it is now, for your dreams to become reality, and for life to be as kind to you as you've been to me.
+
+Happy Birthday, Akshat. Thank you for being you. 
+
+</p>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>
+
+
+    
